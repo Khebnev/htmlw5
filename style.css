@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(images/bg.png);
+}
+.bl {
+    background: #fff;
+    width: 700px;
+    margin: 20px auto;
+    border-radius: 3px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.head {
+    background: url(images/bg_head.jpg);
+    padding: 0;
+}
+.head__bg {
+    padding: 20px;
+    background-color: rgba(172, 55, 55, 0.5);
+
+}
