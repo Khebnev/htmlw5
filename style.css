@@ -5,6 +5,7 @@ body {
     font-family: sans-serif;
     font-size: 1rem;
     line-height: 1.6rem;
+    color: #272727;
 }
 .bl {
     background: #fff;
@@ -30,4 +31,10 @@ body {
 .head__desc {
     margin: 0;
     font-size: 1.2rem;
+}
+label {
+    cursor: pointer; /* Выглядит как ссылка */
+}
+.form__bl {
+    margin: 10px 0;
 }
