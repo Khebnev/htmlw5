@@ -38,18 +38,33 @@
                         <input id="my_url" type="url" placeholder="Введите сайт">
                     </div>
                     <div class="form_bl">
+                        <p class="form_desc">Выберите Ваш пол</p>
                         <label>
-                            <input type="checkbox"> Ваш сайт:
+                            <input type="radio" name="pol"> Мужской
                         </label>
-
+                        <label>
+                            <input type="radio" name="pol"> Женский
+                        </label>
                     </div>
                     <div class="form_bl">
-                        <label for="my_number">Сколько лет?:</label>
-                        <input id="my_number" type="number" placeholder="Введите сколько вам лет">
-                    </div>
-                    <input type="submit" value="Отослать">
-
-                </form>
+                        <p class="form_desc">Что вам большне нравится?</p>
+                        <label>
+                            <input type="checkbox" name="int"> Политика
+                        </label>
+                        <label>
+                            <input type="checkbox" name="int" checked> Бизнес
+                        </label>
+                        <label>
+                            <input type="checkbox" name="int"> Отношения
+                        </label>
+                    </div <div class="form_bl">
+                    <label for="my_number">Сколько лет?:</label>
+                    <input id="my_number" type="number" placeholder="Введите сколько вам лет">
+            </div>
+            <input type="reset" value="Очистить">
+            <input type="submit" value="Отослать">
+            <button type="button">Послать на</button>
+            </form>
             </div>
         </section>
         <section class="middle">

@@ -36,5 +36,10 @@ label {
     cursor: pointer; /* Выглядит как ссылка */
 }
 .form__bl {
-    margin: 10px 0;
+    margin: 20px 0;
+}
+.form_desc {
+    font-style: italic;
+    color: #777;
+    margin: 0;
 }
