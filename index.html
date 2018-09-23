@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Вебинар 5</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,80 +14,74 @@
         <section>
             <div class="bl head">
                 <div class="head__bg">
-                    <h1>Формы</h1>
+                    <h1 class="head__zag">Таблицы</h1>
                     <p class="head__desc">
                         Базовые примеры
                     </p>
                 </div>
             </div>
             <div class="bl">
-                <h2>Форма регистрации</h2>
+                <h2>Таблицы</h2>
+                <table class="">
+                    <caption>Название таблицы</caption>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Имя</th>
+                            <th>Вес</th>
+                            <th>Рост</th>
+                            <th>Высота</th>
+                            <th>Примечание</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Итого</td>
+                            <td colspan="4" rowspan="2">Фигня какая-то, а не таблица</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">6 человек</td>
 
-                <form action="#" name="my_name" method="GET">
-                    <div class="form_bl">
-                        <!--в action  мб любой скрипт для обработки (ссылка на сккрипт)-->
-                        <label class="my__label" for="my_name">Ваше имя:</label>
-                        <input class="my__input" id="my_name" type="text" placeholder="Введите имя">
-                    </div>
-                    <div class="form_bl">
-                        <label class="my__label" for="my_mail">Ваша почта:</label>
-                        <input class="my__input" id="my_mail" type="email" placeholder="Введите почту">
-                    </div>
-                    <div class="form_bl">
-                        <label class="my__label" for="my_url">Ваш сайт:</label>
-                        <input class="my__input" id="my_url" type="url" placeholder="Введите сайт">
-                    </div>
-                    <div class="form_bl">
-                        <label class="my__label" for="my_url">Ваш город:</label>
-                        <select class="my__input" name="city">
-                            <option value="" disabled selected>Укажите город</option>
-                            <optgroup label="Россия">
-                                <option value="">Москва</option>
-                                <option value="">Питер</option>
-                                <option value="">Воронеж</option>
-                            </optgroup>
-                            <optgroup label="Беларусь">
-                                <option value="">Лида</option>
-                                <option value="">Минск</option>
-                                <option value="">Барановичи</option>
-                                <option value="">Гродно</option>
-                            </optgroup>
-                            </optgroup>
-                        </select>
-                    </div>
-                    <div class="form_bl">
-                        <p class="form_desc">Выберите Ваш пол</p>
-                        <label>
-                            <input  type="radio" name="pol"><span class="ch">Мужской</span>
-                        </label>
-                        <label>
-                            <input  type="radio" name="pol"><span class="ch">Женский</span>
-                        </label>
-                    </div>
-                    <div class="form_bl">
-                        <p class="form_desc">Что вам большне нравится?</p>
-                        <label>
-                            <input  type="checkbox" name="int"> <span class="ch">Политика</span>
-                        </label>
-                        <label>
-                            <input  type="checkbox" name="int" checked> <span class="ch">Бизнес</span>
-                        </label>
-                        <label>
-                            <input  type="checkbox" name="int"> <span class="ch">Отношения</span>
-                        </label>
-                        <div class="form_bl">
-                            <label class="my__label" for="my_number">Сколько лет?:</label>
-                            <input class="my__input my__pad" id="my_number" type="number" placeholder="Введите сколько вам лет">
-                        </div>
-                        <div class="form_bl">
-                                <p class="form_desc">Ваше сообщение</p>
-<textarea name="" id="" cols="30" rows="10"></textarea>
-                            </div>
-                        <input class="btn" type="reset" value="Очистить">
-                        <input class="btn" type="submit" value="Отослать">
-                        <button class="btn" type="button" disabled>Послать на</button>
-                </form>
-                </div>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Петя Попрыгункин</td>
+                            <td>50</td>
+                            <td colspan="2">150</td>
+                            <td>Перемещается только прыжками</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Вася Тяжелый</td>
+                            <td>500</td>
+                            <td>10</td>
+                            <td>-5м</td>
+                            <td>Пробил асфальт, канализацию, нашёл золотую жилу</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Серж Одноразовый</td>
+                            <td>74</td>
+                            <td>174</td>
+                            <td>???</td>
+                            <td>Прыгнул 1 раз и сломал ноги. Замерять не успели</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Саня </td>
+                            <td rowspan="2">20</td>
+                            <td rowspan="2">110</td>
+                            <td rowspan="2">2м</td>
+                            <td rowspan="2">Однояйцевые близнецы, прыгвют с точностью до нанометра</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Маня</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
         <section class="middle">
